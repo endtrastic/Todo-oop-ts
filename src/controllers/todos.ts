@@ -19,8 +19,9 @@ export const createTodo = (req: Request, res: Response, next: NextFunction) => {
 
 export const getTodos = (req: Request, res: Response, next: NextFunction) => {
     try{
-        res.status(200).json({
-            task: todos
+        res.status(201).json({
+            message: "Todos recieved",
+            tasks: todos
         })
     } catch(error) {
         console.log(error)

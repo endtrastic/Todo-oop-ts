@@ -5,7 +5,7 @@ const router = Router()
 
 router.post('/', createTodo)
 router.get('/', getTodos)
-router.put('/:id')
+router.patch('/:id')
 router.delete('/:id')
 
 export default router
